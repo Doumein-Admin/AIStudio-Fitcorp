@@ -10,6 +10,11 @@ import ReportsPage from './components/ReportsPage';
 import SettingsPage from './components/SettingsPage';
 import CheckinsPage from './components/CheckinsPage';
 import MaintenancePage from './components/MaintenancePage';
+import InventoryPage from './components/InventoryPage';
+import ClientsPage from './components/ClientsPage';
+import WorkoutsPage from './components/WorkoutsPage';
+import SchedulePage from './components/SchedulePage';
+import ProgressPage from './components/ProgressPage';
 
 
 const App: React.FC = () => {
@@ -46,9 +51,15 @@ const App: React.FC = () => {
             case 'Classes': return <ClassesPage />;
             case 'Check-ins': return <CheckinsPage />;
             case 'Finance': return <FinancePage />;
+            case 'Inventory': return <InventoryPage />;
             case 'Maintenance': return <MaintenancePage />;
             case 'Reports': return <ReportsPage />;
             case 'Settings': return <SettingsPage />;
+            // Trainer Pages
+            case 'Clients': return <ClientsPage />;
+            case 'Workouts': return <WorkoutsPage />;
+            case 'Schedule': return <SchedulePage />;
+            case 'Progress': return <ProgressPage />;
             default: return <DashboardPage />;
         }
     };
